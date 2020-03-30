@@ -1,3 +1,6 @@
+#watch youtube video you will get to know what actually this code does
+# link is given in description
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import ssl
