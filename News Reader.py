@@ -1,5 +1,5 @@
 #watch youtube video you will get to know what actually this code does
-# link is given in description
+# link is in description [readme file]
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
@@ -20,7 +20,6 @@ def speak(text):
     playsound.playsound(filename)
     os.remove(filename)
 
-
 speak('Welcome User!')
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
@@ -31,7 +30,7 @@ data = dict()
 hdline = list()
 links = list()
 more = list()
-# url = input('Enter - ')
+
 url = 'https://www.indiatoday.in/'
 html = urlopen(url).read()
 soup = BeautifulSoup(html, 'html5lib')
@@ -74,9 +73,5 @@ while info < totalInfo:
                     break
         except Exception as e:
             print('Sorry! Not Found')
-
-
-
     info += 1
-
 print('Thank You!')
